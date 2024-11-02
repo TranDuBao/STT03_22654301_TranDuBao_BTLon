@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../font/fontawesome-free-6.6.0-web/css/all.min.css">
+    <style>
+        body {
+            background-image: url(../img/anhnen_dki_dn.avif);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wapper {
+            width: 580px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 0 20px 50px 20px;
+            background-image: url(../img/anhdong1.gif);
+            background-size: cover;
+            border-radius: 4px;
+        }
+        .logo-login {
+            width: 100px;
+            border-radius: 50%;
+            margin-left: 190px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wapper">
+        <div class="container mt-5">
+            <a href="../html/index.html">
+                <img class="logo-login" src="../img/logo-Ohui.png" alt="">
+            </a>
+            <h2>Đăng Nhập</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required placeholder="Nhập email của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" class="form-control" id="password" required placeholder="Nhập mật khẩu">
+                </div>
+                <button type="submit" class="btn btn-danger">Đăng Nhập</button>
+                
+                <a style="margin-left: 260px;" href="#">Quên mật khẩu?</a>
+            </form>
+            <br>
+            <h5>Nếu bạn chưa có tài khoản</h5>
+            <button type="submit" class="btn btn-danger"><a href="../html/register.html" class="text-white">Đăng ký</a></button>
+            <div class="text-center">
+                <a class="text-dark" href="#"><i class="fa-brands fa-facebook icon-web"></i>Facebook</a>
+                <a class="text-dark" href="#"><i class="fa-brands fa-google icon-web"></i>Google</a>
+                <a class="text-dark" href="#"><i class="fa-brands fa-instagram icon-web"></i>Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#login-form').submit(function (e) {
+            e.preventDefault();
+
+            var email = $('#email').val();
+            var password = $('#password').val();
+
+            // Giả lập đăng nhập thành công
+            if (email === 'user@example.com' && password === 'password123') {
+                localStorage.setItem('loggedIn', 'true');
+                localStorage.setItem('userName', 'Người Dùng');
+                localStorage.setItem('email', email);
+                alert('Đăng nhập thành công!');
+                window.location.href = '../html/index.html';
+            } else {
+                alert('Thông tin đăng nhập không hợp lệ.');
+            }
+        });
+        $('#login-form').submit(function (e) {
+        e.preventDefault();
+
+        var email = $('#email').val();
+        var password = $('#password').val();
+
+        // Lấy thông tin đã đăng ký từ LocalStorage
+        var registeredEmail = localStorage.getItem('registeredEmail');
+        var registeredPassword = localStorage.getItem('registeredPassword');
+
+        // So sánh thông tin đăng nhập với thông tin đã đăng ký
+        if (email === registeredEmail && password === registeredPassword) {
+            localStorage.setItem('loggedIn', 'true');
+            localStorage.setItem('userName', 'Người Dùng');
+            localStorage.setItem('email', email);
+            alert('Đăng nhập thành công!');
+            window.location.href = '../html/index.html';  // Điều hướng tới trang chính
+        } else {
+            alert('Thông tin đăng nhập không hợp lệ.');
+        }
+    });
+    </script>
+</body>
+</html>
