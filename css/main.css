@@ -115,13 +115,13 @@ body {
         margin-bottom: 30px;
     }
     
-    .carousel-images {
+.carousel-images {
         display: flex;
         width: 60%;
         animation: slide 10s linear infinite;
-    }
+}
     
-    .carousel-images img {
+.carousel-images img {
         width: 100%;
         flex-shrink: 0;
         margin-right: 12px;
