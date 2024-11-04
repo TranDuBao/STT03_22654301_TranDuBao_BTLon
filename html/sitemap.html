@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiteMap - Mỹ Phẩm OHui</title>
+    <link rel="stylesheet" href="../font/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <style>
         body{
-            background-image: url(/img/anhnen_sitemap.jpg);
+            background-image: url(../img/anhnen_sitemap.jpg);
         }
     </style>
 </head>
@@ -27,10 +28,16 @@
                 <li class="nav-item li-list"><a class="nav-link text-white" href="../html/sanpham.html">Sản Phẩm</a></li>
                 <li class="nav-item li-list"><a class="nav-link text-white" href="../html/contact.html">Liên Hệ</a></li>
                 <li class="nav-item li-list"><a class="nav-link text-white" href="../html/sitemap.html">SiteMap</a></li>
+                <li class="nav-item li-list" id="login-item"><a class="nav-link text-white" href="../html/login.html">Đăng Nhập</a></li>
+                <li class="nav-item li-list" id="register-item"><a class="nav-link text-white" href="../html/register.html">Đăng Ký</a></li>
             </ul>
         </div>
     </nav>
-    <div class="hero-section jumbotron text-center text-white img-sitemap">
+    <div class="hero-section jumbotron text-center text-danger img-header">
+        <h1>Chào Mừng Đến Mỹ Phẩm OHui</h1>
+        <p>Khám phá những sản phẩm chất lượng cao dành cho làn da của bạn!</p>
+    </div>
+    <div class="hero-section jumbotron text-center text-secondary img-sitemap">
         <h1>Trang chủ / SiteMap</h1>
     </div>
 
@@ -39,7 +46,7 @@
         <div class="row">
  
             <div class="col-md-4">
-                <h4 class="text-white text-center">Trang Chủ</h4>
+                <h4 class="text-secondary text-center">Trang Chủ</h4>
                 <br>
                 <ul class="list-unstyled text-center">
                     <li><a href="../html/index.html" class="text-danger">Trang chủ</a></li>
@@ -51,7 +58,7 @@
 
       
             <div class="col-md-4">
-                <h4 class="text-white text-center">Sản Phẩm</h4>
+                <h4 class="text-secondary text-center">Sản Phẩm</h4>
                 <br>
                 <ul class="list-unstyled text-center">
                     <li><a href="../html/sanpham.html" class="text-danger">Danh mục sản phẩm</a></li>
@@ -60,7 +67,7 @@
             </div>
 
             <div class="col-md-4">
-                <h4 class="text-white text-center">Tài Khoản</h4>
+                <h4 class="text-secondary text-center">Tài Khoản</h4>
                 <br>
                 <ul class="list-unstyled text-center">
                     <li ><a href="../html/dangnhap.html" class="text-danger">Đăng nhập</a></li>
@@ -69,7 +76,76 @@
             </div>
         </div>
     </div>
-    <div class="contact-a">
+    <section class="gift_section layout_padding-bottom ">
+        <div class="box ">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <img src="../img/banner2.jpg" width="1500px" alt="" class="img-banner">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="info_section layout_padding2-top ">
+        <div class="social_container">
+                <div class="social_box">
+                    <a href="https://www.facebook.com/" class="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/?lang=vi" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" class="youtube">
+                        <i class="fa-brands fa-youtube" ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="info_container ">
+            <div class="container">
+                <div class="row ">
+                    <div style="text-align: justify;" class="col-md-6 col-lg-3 ">
+                        <h4 class="h4-text">Tin Tức</h4>
+                        <p>
+                            OHUI là dòng mỹ phẩm hướng đến đối tượng khách hàng từ 30 đến 60 tuổi với làn da suy yếu do tuổi tác. Thế nên, những người ở độ tuổi đó nếu muốn chăm sóc da thì hoàn toàn có thể sử dụng.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="info_form ">
+                            <h4 class="h4-text">Đăng Ký</h4>
+                            <form action="#">
+                                <input type="email " placeholder="Nhập địa chỉ email" class="form-control">
+                                <button class="btn btn-outline-danger btn-check">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div style="text-align: justify;" class="col-md-6 col-lg-3 ">
+                        <h4 class="h4-text">Trợ Giúp</h4>
+                        <p>Giúp sáng da, cung cấp ẩm làm đẹp cho mọi loại da, ngăn ngừa mụn và cải thiện màu da </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <h4 class="h4-text"> Liên Hệ</h4>
+                        <div class="info_link-box ">
+                            <a href="contact.html" class="contact-text">
+                                <i class="fa fa-map-marker "></i>
+                                <span>12 Nguyễn Văn Bảo, Phường 4, Gò Vấp</span>
+                            </a>
+                            <a href="contact.html" class="contact-text">
+                                <i class="fa fa-phone "></i>
+                                <span>0325.176.093</span>
+                            </a>
+                            <a href="contact.html" class="contact-text">
+                                <i class="fa fa-envelope "></i>
+                                <span> dubao1005@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-a footer-bottum">
         <div class="conact-all">
         </div>
     </div>

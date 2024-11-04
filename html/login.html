@@ -33,22 +33,37 @@
             margin-left: 190px;
             margin-bottom: 20px;
         }
+        .input-icon .form-control {
+            padding-left: 30px;
+        }
+        .input-icon {
+            position: relative;
+        }
+        .input-icon i {
+            position: absolute;
+            top: 77%;
+            left: 10px;
+            transform: translateY(-77%);
+            color: #888;
+        }
     </style>
 </head>
 
 <body>
-    <div class="wapper">
+    <div class="wapper mt-5">
         <div class="container mt-5">
             <a href="../html/index.html">
                 <img class="logo-login" src="../img/logo-Ohui.png" alt="">
             </a>
             <h2>Đăng Nhập</h2>
             <form id="login-form">
-                <div class="form-group">
+                <div class="form-group input-icon">
+                    <i class="fa-solid fa-user"></i>
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" required placeholder="Nhập email của bạn">
                 </div>
-                <div class="form-group">
+                <div class="form-group input-icon">
+                    <i class="fa-solid fa-lock"></i>
                     <label for="password">Mật khẩu:</label>
                     <input type="password" class="form-control" id="password" required placeholder="Nhập mật khẩu">
                 </div>
@@ -60,9 +75,9 @@
             <h5>Nếu bạn chưa có tài khoản</h5>
             <button type="submit" class="btn btn-danger"><a href="../html/register.html" class="text-white">Đăng ký</a></button>
             <div class="text-center">
-                <a class="text-dark" href="#"><i class="fa-brands fa-facebook icon-web"></i>Facebook</a>
-                <a class="text-dark" href="#"><i class="fa-brands fa-google icon-web"></i>Google</a>
-                <a class="text-dark" href="#"><i class="fa-brands fa-instagram icon-web"></i>Instagram</a>
+                <a class="text-dark" href="https://www.facebook.com/"><i class="fa-brands fa-facebook icon-web"></i>Facebook</a>
+                <a class="text-dark" href="https://www.google.com.vn/"><i class="fa-brands fa-google icon-web"></i>Google</a>
+                <a class="text-dark" href="https://www.instagram.com/"><i class="fa-brands fa-instagram icon-web"></i>Instagram</a>
             </div>
         </div>
     </div>
