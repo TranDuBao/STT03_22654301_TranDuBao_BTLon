@@ -8,6 +8,18 @@ body {
 #search-input {
         width: 400px; 
 }
+.text-outline {
+        text-shadow: 
+            -1px -1px 0px #fff,  
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            1px 1px 0px #fff;
+    }
+.welcome {
+
+        color: #fff;
+        padding-top: 10px ;
+}
 .img-header {
     background-image: url(../img/anhnen_header.jpg);
     background-size: cover;
@@ -35,10 +47,7 @@ body {
 .img-item {
         height:  60%;
 }
-.title-item {
-        margin-top: 10px;
-        text-decoration:underline;
-}
+
 .li-list {
 
         font-size: 18px;
@@ -107,7 +116,6 @@ body {
 .img-banner {
         border-radius: 12px;
 }
-
 .carousel-container {
         width: 100%;
         overflow: hidden;
@@ -181,6 +189,7 @@ body {
         margin-top: 40px;
 }
 .contact-text {
+        text-decoration: none;
         color:#333
 }
 .info_link-box {
@@ -229,3 +238,24 @@ body {
         transform: translateX(-50%);
         margin-top: 50px;
 }
+.text-footer {
+        animation: hover1 4s linear infinite;
+}
+@keyframes hover1 {
+        10%{color:rebeccapurple}
+        20%{color:red}
+        30%{color:#FFD700}
+        40%{color:gray}
+        50%{color:#7FFF00}
+        60%{color:#FF6347}
+        70%{color:#8A2BE2}
+        80%{color:#FF6F61}
+        90%{color:#4682B4}
+        100%{color:#20B2AA}
+}
+.abc:hover {
+        text-decoration: none;
+}
+.icon-contact {
+        margin-top: -15px;
+    }
